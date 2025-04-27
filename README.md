@@ -1,5 +1,5 @@
 # microservicenote
-######################################################################################################
+#############################################################################################
 ### APIS
 spring.cloud.config.enabled=true
 spring.config.import=optional:configserver:http://localhost:9999
@@ -17,13 +17,13 @@ spring.config.import=optional:configserver:http://localhost:8888
 </dependency>
 
 
-######################################################################################################
+#############################################################################################
 ### config-service :
 
 @EnableConfigServer
 
 server.port=9999
-spring.cloud.config.server.git.uri=https://github.com/mohamedYoussfi/config-ecom-app
+spring.cloud.config.server.git.uri=https://github.com/zakariachafi/config-fils
 
 <dependency>
     <groupId>org.springframework.cloud</groupId>
@@ -35,7 +35,7 @@ spring.cloud.config.server.git.uri=https://github.com/mohamedYoussfi/config-ecom
 </dependency>
 
 
-######################################################################################################
+#############################################################################################
 #### discovery service:
 
 @EnableEurekaServer
@@ -50,7 +50,7 @@ eureka.client.register-with-eureka=false
 </dependency>
 
 
-######################################################################################################
+#############################################################################################
 ### gateway service :
 
 @Bean
